@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.netty.tutorial.chat</OriginalElement>
+  <nodes>
+    <node x="1.0" y="677.0">org.jboss.netty.channel.ChannelEvent</node>
+    <node x="0.0" y="474.0">org.jboss.netty.bootstrap.ServerBootstrap</node>
+    <node x="511.0" y="677.0">org.jboss.netty.buffer.ChannelBuffer</node>
+    <node x="206.9749999999999" y="158.0">org.jboss.netty.util.ExternalResourceReleasable</node>
+    <node x="525.3708333333332" y="158.0">org.jboss.netty.channel.SimpleChannelHandler</node>
+    <node x="127.97499999999991" y="395.0">org.jboss.netty.channel.socket.ServerSocketChannelFactory</node>
+    <node x="360.62774122807014" y="316.0">org.jboss.netty.channel.ChannelPipeline</node>
+    <node x="344.9124999999999" y="395.0">org.jboss.netty.bootstrap.Bootstrap</node>
+    <node x="152.0" y="677.0">org.jboss.netty.channel.ChannelHandlerContext</node>
+    <node x="446.1624999999999" y="603.0">com.netty.tutorial.chat.ChatServer</node>
+    <node x="356.0" y="677.0">org.jboss.netty.channel.ChannelFuture</node>
+    <node x="827.5" y="237.0">org.jboss.netty.handler.codec.serialization.ObjectEncoder</node>
+    <node x="0.0" y="830.0">org.jboss.netty.channel.Channels</node>
+    <node x="135.0" y="474.0">org.jboss.netty.channel.socket.nio.NioServerSocketChannelFactory</node>
+    <node x="479.3708333333332" y="79.0">org.jboss.netty.channel.ChannelUpstreamHandler</node>
+    <node x="529.7507675438596" y="0.0">org.jboss.netty.channel.ChannelHandler</node>
+    <node x="525.3757675438596" y="474.0">java.net.InetSocketAddress</node>
+    <node x="145.4749999999999" y="316.0">org.jboss.netty.channel.ServerChannelFactory</node>
+    <node x="126.0" y="830.0">org.jboss.netty.channel.Channel</node>
+    <node x="816.0" y="158.0">org.jboss.netty.handler.codec.oneone.OneToOneEncoder</node>
+    <node x="720.3757675438596" y="316.0">org.jboss.netty.channel.ChannelPipelineFactory</node>
+    <node x="743.75" y="79.0">org.jboss.netty.channel.ChannelDownstreamHandler</node>
+    <node x="0.0" y="756.0">org.jboss.netty.channel.MessageEvent</node>
+    <node x="722.4124999999999" y="603.0">com.netty.tutorial.chat.ChatClient</node>
+    <node x="674.3757675438596" y="474.0">org.jboss.netty.bootstrap.ClientBootstrap</node>
+    <node x="536.8708333333332" y="237.0">com.netty.tutorial.chat.ChatServerHandler</node>
+    <node x="203.4749999999999" y="237.0">org.jboss.netty.channel.ChannelFactory</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.jboss.netty.bootstrap.ServerBootstrap" target="org.jboss.netty.bootstrap.Bootstrap">
+      <point x="28.75" y="-14.5" />
+      <point x="86.25" y="454.0" />
+      <point x="365.6624999999999" y="454.0" />
+      <point x="-20.75" y="14.5" />
+    </edge>
+    <edge source="org.jboss.netty.channel.ChannelUpstreamHandler" target="org.jboss.netty.channel.ChannelHandler">
+      <point x="0.0" y="-14.5" />
+      <point x="563.8708333333332" y="54.0" />
+      <point x="588.7507675438596" y="54.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.jboss.netty.channel.ServerChannelFactory" target="org.jboss.netty.channel.ChannelFactory">
+      <point x="0.0" y="-14.5" />
+      <point x="218.9749999999999" y="291.0" />
+      <point x="232.2249999999999" y="291.0" />
+      <point x="-28.75" y="14.5" />
+    </edge>
+    <edge source="org.jboss.netty.handler.codec.oneone.OneToOneEncoder" target="org.jboss.netty.channel.ChannelDownstreamHandler">
+      <point x="0.0" y="-14.5" />
+      <point x="46.25" y="14.5" />
+    </edge>
+    <edge source="org.jboss.netty.channel.socket.ServerSocketChannelFactory" target="org.jboss.netty.channel.ServerChannelFactory">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.jboss.netty.bootstrap.ClientBootstrap" target="org.jboss.netty.bootstrap.Bootstrap">
+      <point x="0.0" y="-14.5" />
+      <point x="731.3757675438596" y="454.0" />
+      <point x="407.1624999999999" y="454.0" />
+      <point x="20.75" y="14.5" />
+    </edge>
+    <edge source="org.jboss.netty.channel.MessageEvent" target="org.jboss.netty.channel.ChannelEvent">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.netty.tutorial.chat.ChatServerHandler" target="org.jboss.netty.channel.SimpleChannelHandler">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.jboss.netty.channel.ChannelFactory" target="org.jboss.netty.util.ExternalResourceReleasable">
+      <point x="0.0" y="-14.5" />
+      <point x="260.9749999999999" y="212.0" />
+      <point x="250.9749999999999" y="212.0" />
+      <point x="-44.0" y="14.5" />
+    </edge>
+    <edge source="org.jboss.netty.channel.socket.nio.NioServerSocketChannelFactory" target="org.jboss.netty.channel.socket.ServerSocketChannelFactory">
+      <point x="0.0" y="-14.5" />
+      <point x="235.5" y="444.0" />
+      <point x="218.9749999999999" y="444.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.jboss.netty.channel.SimpleChannelHandler" target="org.jboss.netty.channel.ChannelUpstreamHandler">
+      <point x="-38.5" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.jboss.netty.channel.ChannelDownstreamHandler" target="org.jboss.netty.channel.ChannelHandler">
+      <point x="0.0" y="-14.5" />
+      <point x="836.25" y="54.0" />
+      <point x="628.0841008771929" y="54.0" />
+      <point x="39.33333333333337" y="14.5" />
+    </edge>
+    <edge source="org.jboss.netty.handler.codec.serialization.ObjectEncoder" target="org.jboss.netty.handler.codec.oneone.OneToOneEncoder">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.jboss.netty.bootstrap.Bootstrap" target="org.jboss.netty.util.ExternalResourceReleasable">
+      <point x="-10.375" y="-14.5" />
+      <point x="376.0374999999999" y="365.0" />
+      <point x="350.12774122807014" y="365.0" />
+      <point x="350.12774122807014" y="212.0" />
+      <point x="338.9749999999999" y="212.0" />
+      <point x="44.0" y="14.5" />
+    </edge>
+    <edge source="org.jboss.netty.channel.SimpleChannelHandler" target="org.jboss.netty.channel.ChannelDownstreamHandler">
+      <point x="38.5" y="-14.5" />
+      <point x="640.8708333333332" y="133.0" />
+      <point x="790.0" y="133.0" />
+      <point x="-46.25" y="14.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="879.0" y="410.0" />
+  <SelectedNodes>
+    <node>org.jboss.netty.channel.MessageEvent</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
